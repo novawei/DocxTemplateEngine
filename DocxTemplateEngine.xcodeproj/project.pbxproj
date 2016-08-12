@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF6494771D5D91DD00525870 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6494761D5D91DD00525870 /* main.m */; };
+		EF64947A1D5D91DD00525870 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6494791D5D91DD00525870 /* AppDelegate.m */; };
+		EF64947D1D5D91DD00525870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64947C1D5D91DD00525870 /* ViewController.m */; };
+		EF6494801D5D91DD00525870 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF64947E1D5D91DD00525870 /* Main.storyboard */; };
+		EF6494821D5D91DD00525870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF6494811D5D91DD00525870 /* Assets.xcassets */; };
+		EF6494851D5D91DD00525870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF6494831D5D91DD00525870 /* LaunchScreen.storyboard */; };
+		EF6494901D5D91DD00525870 /* DocxTemplateEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64948F1D5D91DD00525870 /* DocxTemplateEngineTests.m */; };
+		EF64949B1D5D91DD00525870 /* DocxTemplateEngineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64949A1D5D91DD00525870 /* DocxTemplateEngineUITests.m */; };
+		EF6494AB1D5D921B00525870 /* DocxTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6494AA1D5D921B00525870 /* DocxTemplateEngine.m */; };
+		EF6494CE1D5DA5B800525870 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494C31D5DA5B800525870 /* ioapi.c */; };
+		EF6494CF1D5DA5B800525870 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494C51D5DA5B800525870 /* mztools.c */; };
+		EF6494D01D5DA5B800525870 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494C71D5DA5B800525870 /* unzip.c */; };
+		EF6494D11D5DA5B800525870 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494C91D5DA5B800525870 /* zip.c */; };
+		EF6494D21D5DA5B800525870 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6494CC1D5DA5B800525870 /* SSZipArchive.m */; };
+		EF6494D61D5DA78100525870 /* template1.docx in Resources */ = {isa = PBXBuildFile; fileRef = EF6494D41D5DA78100525870 /* template1.docx */; };
+		EF6494D71D5DA78100525870 /* template1.json in Resources */ = {isa = PBXBuildFile; fileRef = EF6494D51D5DA78100525870 /* template1.json */; };
+		EF6494EE1D5DA96700525870 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DB1D5DA96700525870 /* aescrypt.c */; };
+		EF6494EF1D5DA96700525870 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DC1D5DA96700525870 /* aeskey.c */; };
+		EF6494F01D5DA96700525870 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DE1D5DA96700525870 /* aestab.c */; };
+		EF6494F11D5DA96700525870 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494E21D5DA96700525870 /* entropy.c */; };
+		EF6494F21D5DA96700525870 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494E41D5DA96700525870 /* fileenc.c */; };
+		EF6494F31D5DA96700525870 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494E61D5DA96700525870 /* hmac.c */; };
+		EF6494F41D5DA96700525870 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494E81D5DA96700525870 /* prng.c */; };
+		EF6494F51D5DA96700525870 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494EA1D5DA96700525870 /* pwd2key.c */; };
+		EF6494F61D5DA96700525870 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494EC1D5DA96700525870 /* sha1.c */; };
+		EF6494FA1D5DA9F400525870 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6494F91D5DA9F400525870 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF64948C1D5D91DD00525870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF64946A1D5D91DD00525870 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6494711D5D91DD00525870;
+			remoteInfo = DocxTemplateEngine;
+		};
+		EF6494971D5D91DD00525870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF64946A1D5D91DD00525870 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF6494711D5D91DD00525870;
+			remoteInfo = DocxTemplateEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF6494721D5D91DD00525870 /* DocxTemplateEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocxTemplateEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6494761D5D91DD00525870 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF6494781D5D91DD00525870 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF6494791D5D91DD00525870 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF64947B1D5D91DD00525870 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF64947C1D5D91DD00525870 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF64947F1D5D91DD00525870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF6494811D5D91DD00525870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF6494841D5D91DD00525870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF6494861D5D91DD00525870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF64948B1D5D91DD00525870 /* DocxTemplateEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocxTemplateEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64948F1D5D91DD00525870 /* DocxTemplateEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocxTemplateEngineTests.m; sourceTree = "<group>"; };
+		EF6494911D5D91DD00525870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6494961D5D91DD00525870 /* DocxTemplateEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocxTemplateEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF64949A1D5D91DD00525870 /* DocxTemplateEngineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocxTemplateEngineUITests.m; sourceTree = "<group>"; };
+		EF64949C1D5D91DD00525870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF6494A91D5D921B00525870 /* DocxTemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocxTemplateEngine.h; sourceTree = "<group>"; };
+		EF6494AA1D5D921B00525870 /* DocxTemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocxTemplateEngine.m; sourceTree = "<group>"; };
+		EF6494C21D5DA5B800525870 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		EF6494C31D5DA5B800525870 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		EF6494C41D5DA5B800525870 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		EF6494C51D5DA5B800525870 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		EF6494C61D5DA5B800525870 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		EF6494C71D5DA5B800525870 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		EF6494C81D5DA5B800525870 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		EF6494C91D5DA5B800525870 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		EF6494CA1D5DA5B800525870 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		EF6494CB1D5DA5B800525870 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		EF6494CC1D5DA5B800525870 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		EF6494CD1D5DA5B800525870 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		EF6494D41D5DA78100525870 /* template1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = template1.docx; sourceTree = "<group>"; };
+		EF6494D51D5DA78100525870 /* template1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template1.json; sourceTree = "<group>"; };
+		EF6494D91D5DA96700525870 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		EF6494DA1D5DA96700525870 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		EF6494DB1D5DA96700525870 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		EF6494DC1D5DA96700525870 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		EF6494DD1D5DA96700525870 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		EF6494DE1D5DA96700525870 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		EF6494DF1D5DA96700525870 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		EF6494E01D5DA96700525870 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		EF6494E11D5DA96700525870 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		EF6494E21D5DA96700525870 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		EF6494E31D5DA96700525870 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		EF6494E41D5DA96700525870 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		EF6494E51D5DA96700525870 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		EF6494E61D5DA96700525870 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		EF6494E71D5DA96700525870 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		EF6494E81D5DA96700525870 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		EF6494E91D5DA96700525870 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		EF6494EA1D5DA96700525870 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		EF6494EB1D5DA96700525870 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		EF6494EC1D5DA96700525870 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		EF6494ED1D5DA96700525870 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		EF6494F91D5DA9F400525870 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF64946F1D5D91DD00525870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6494FA1D5DA9F400525870 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494881D5D91DD00525870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494931D5D91DD00525870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF6494691D5D91DD00525870 = {
+			isa = PBXGroup;
+			children = (
+				EF6494741D5D91DD00525870 /* DocxTemplateEngine */,
+				EF64948E1D5D91DD00525870 /* DocxTemplateEngineTests */,
+				EF6494991D5D91DD00525870 /* DocxTemplateEngineUITests */,
+				EF6494731D5D91DD00525870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF6494731D5D91DD00525870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494721D5D91DD00525870 /* DocxTemplateEngine.app */,
+				EF64948B1D5D91DD00525870 /* DocxTemplateEngineTests.xctest */,
+				EF6494961D5D91DD00525870 /* DocxTemplateEngineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF6494741D5D91DD00525870 /* DocxTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494D31D5DA71400525870 /* Templates */,
+				EF6494A81D5D920300525870 /* DocxTemplateEngine */,
+				EF6494781D5D91DD00525870 /* AppDelegate.h */,
+				EF6494791D5D91DD00525870 /* AppDelegate.m */,
+				EF64947B1D5D91DD00525870 /* ViewController.h */,
+				EF64947C1D5D91DD00525870 /* ViewController.m */,
+				EF64947E1D5D91DD00525870 /* Main.storyboard */,
+				EF6494811D5D91DD00525870 /* Assets.xcassets */,
+				EF6494831D5D91DD00525870 /* LaunchScreen.storyboard */,
+				EF6494861D5D91DD00525870 /* Info.plist */,
+				EF6494751D5D91DD00525870 /* Supporting Files */,
+			);
+			path = DocxTemplateEngine;
+			sourceTree = "<group>";
+		};
+		EF6494751D5D91DD00525870 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494F91D5DA9F400525870 /* libz.tbd */,
+				EF6494761D5D91DD00525870 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF64948E1D5D91DD00525870 /* DocxTemplateEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF64948F1D5D91DD00525870 /* DocxTemplateEngineTests.m */,
+				EF6494911D5D91DD00525870 /* Info.plist */,
+			);
+			path = DocxTemplateEngineTests;
+			sourceTree = "<group>";
+		};
+		EF6494991D5D91DD00525870 /* DocxTemplateEngineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EF64949A1D5D91DD00525870 /* DocxTemplateEngineUITests.m */,
+				EF64949C1D5D91DD00525870 /* Info.plist */,
+			);
+			path = DocxTemplateEngineUITests;
+			sourceTree = "<group>";
+		};
+		EF6494A81D5D920300525870 /* DocxTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494C01D5DA5B800525870 /* SSZipArchive */,
+				EF6494A91D5D921B00525870 /* DocxTemplateEngine.h */,
+				EF6494AA1D5D921B00525870 /* DocxTemplateEngine.m */,
+			);
+			path = DocxTemplateEngine;
+			sourceTree = "<group>";
+		};
+		EF6494C01D5DA5B800525870 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494D81D5DA96700525870 /* aes */,
+				EF6494C11D5DA5B800525870 /* minizip */,
+				EF6494CB1D5DA5B800525870 /* SSZipArchive.h */,
+				EF6494CC1D5DA5B800525870 /* SSZipArchive.m */,
+				EF6494CD1D5DA5B800525870 /* SSZipCommon.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		EF6494C11D5DA5B800525870 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494C21D5DA5B800525870 /* crypt.h */,
+				EF6494C31D5DA5B800525870 /* ioapi.c */,
+				EF6494C41D5DA5B800525870 /* ioapi.h */,
+				EF6494C51D5DA5B800525870 /* mztools.c */,
+				EF6494C61D5DA5B800525870 /* mztools.h */,
+				EF6494C71D5DA5B800525870 /* unzip.c */,
+				EF6494C81D5DA5B800525870 /* unzip.h */,
+				EF6494C91D5DA5B800525870 /* zip.c */,
+				EF6494CA1D5DA5B800525870 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		EF6494D31D5DA71400525870 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494D41D5DA78100525870 /* template1.docx */,
+				EF6494D51D5DA78100525870 /* template1.json */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		EF6494D81D5DA96700525870 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				EF6494D91D5DA96700525870 /* aes.h */,
+				EF6494DA1D5DA96700525870 /* aes_via_ace.h */,
+				EF6494DB1D5DA96700525870 /* aescrypt.c */,
+				EF6494DC1D5DA96700525870 /* aeskey.c */,
+				EF6494DD1D5DA96700525870 /* aesopt.h */,
+				EF6494DE1D5DA96700525870 /* aestab.c */,
+				EF6494DF1D5DA96700525870 /* aestab.h */,
+				EF6494E01D5DA96700525870 /* brg_endian.h */,
+				EF6494E11D5DA96700525870 /* brg_types.h */,
+				EF6494E21D5DA96700525870 /* entropy.c */,
+				EF6494E31D5DA96700525870 /* entropy.h */,
+				EF6494E41D5DA96700525870 /* fileenc.c */,
+				EF6494E51D5DA96700525870 /* fileenc.h */,
+				EF6494E61D5DA96700525870 /* hmac.c */,
+				EF6494E71D5DA96700525870 /* hmac.h */,
+				EF6494E81D5DA96700525870 /* prng.c */,
+				EF6494E91D5DA96700525870 /* prng.h */,
+				EF6494EA1D5DA96700525870 /* pwd2key.c */,
+				EF6494EB1D5DA96700525870 /* pwd2key.h */,
+				EF6494EC1D5DA96700525870 /* sha1.c */,
+				EF6494ED1D5DA96700525870 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF6494711D5D91DD00525870 /* DocxTemplateEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF64949F1D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngine" */;
+			buildPhases = (
+				EF64946E1D5D91DD00525870 /* Sources */,
+				EF64946F1D5D91DD00525870 /* Frameworks */,
+				EF6494701D5D91DD00525870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocxTemplateEngine;
+			productName = DocxTemplateEngine;
+			productReference = EF6494721D5D91DD00525870 /* DocxTemplateEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF64948A1D5D91DD00525870 /* DocxTemplateEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6494A21D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngineTests" */;
+			buildPhases = (
+				EF6494871D5D91DD00525870 /* Sources */,
+				EF6494881D5D91DD00525870 /* Frameworks */,
+				EF6494891D5D91DD00525870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF64948D1D5D91DD00525870 /* PBXTargetDependency */,
+			);
+			name = DocxTemplateEngineTests;
+			productName = DocxTemplateEngineTests;
+			productReference = EF64948B1D5D91DD00525870 /* DocxTemplateEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EF6494951D5D91DD00525870 /* DocxTemplateEngineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF6494A51D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngineUITests" */;
+			buildPhases = (
+				EF6494921D5D91DD00525870 /* Sources */,
+				EF6494931D5D91DD00525870 /* Frameworks */,
+				EF6494941D5D91DD00525870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF6494981D5D91DD00525870 /* PBXTargetDependency */,
+			);
+			name = DocxTemplateEngineUITests;
+			productName = DocxTemplateEngineUITests;
+			productReference = EF6494961D5D91DD00525870 /* DocxTemplateEngineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF64946A1D5D91DD00525870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = nfs;
+				TargetAttributes = {
+					EF6494711D5D91DD00525870 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					EF64948A1D5D91DD00525870 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EF6494711D5D91DD00525870;
+					};
+					EF6494951D5D91DD00525870 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = EF6494711D5D91DD00525870;
+					};
+				};
+			};
+			buildConfigurationList = EF64946D1D5D91DD00525870 /* Build configuration list for PBXProject "DocxTemplateEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF6494691D5D91DD00525870;
+			productRefGroup = EF6494731D5D91DD00525870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF6494711D5D91DD00525870 /* DocxTemplateEngine */,
+				EF64948A1D5D91DD00525870 /* DocxTemplateEngineTests */,
+				EF6494951D5D91DD00525870 /* DocxTemplateEngineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF6494701D5D91DD00525870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6494D71D5DA78100525870 /* template1.json in Resources */,
+				EF6494851D5D91DD00525870 /* LaunchScreen.storyboard in Resources */,
+				EF6494821D5D91DD00525870 /* Assets.xcassets in Resources */,
+				EF6494801D5D91DD00525870 /* Main.storyboard in Resources */,
+				EF6494D61D5DA78100525870 /* template1.docx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494891D5D91DD00525870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494941D5D91DD00525870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF64946E1D5D91DD00525870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6494F31D5DA96700525870 /* hmac.c in Sources */,
+				EF64947D1D5D91DD00525870 /* ViewController.m in Sources */,
+				EF6494F01D5DA96700525870 /* aestab.c in Sources */,
+				EF6494F51D5DA96700525870 /* pwd2key.c in Sources */,
+				EF6494D11D5DA5B800525870 /* zip.c in Sources */,
+				EF6494EF1D5DA96700525870 /* aeskey.c in Sources */,
+				EF6494D21D5DA5B800525870 /* SSZipArchive.m in Sources */,
+				EF6494F11D5DA96700525870 /* entropy.c in Sources */,
+				EF6494D01D5DA5B800525870 /* unzip.c in Sources */,
+				EF64947A1D5D91DD00525870 /* AppDelegate.m in Sources */,
+				EF6494CF1D5DA5B800525870 /* mztools.c in Sources */,
+				EF6494771D5D91DD00525870 /* main.m in Sources */,
+				EF6494F61D5DA96700525870 /* sha1.c in Sources */,
+				EF6494AB1D5D921B00525870 /* DocxTemplateEngine.m in Sources */,
+				EF6494EE1D5DA96700525870 /* aescrypt.c in Sources */,
+				EF6494F21D5DA96700525870 /* fileenc.c in Sources */,
+				EF6494F41D5DA96700525870 /* prng.c in Sources */,
+				EF6494CE1D5DA5B800525870 /* ioapi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494871D5D91DD00525870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF6494901D5D91DD00525870 /* DocxTemplateEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6494921D5D91DD00525870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF64949B1D5D91DD00525870 /* DocxTemplateEngineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF64948D1D5D91DD00525870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6494711D5D91DD00525870 /* DocxTemplateEngine */;
+			targetProxy = EF64948C1D5D91DD00525870 /* PBXContainerItemProxy */;
+		};
+		EF6494981D5D91DD00525870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF6494711D5D91DD00525870 /* DocxTemplateEngine */;
+			targetProxy = EF6494971D5D91DD00525870 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF64947E1D5D91DD00525870 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF64947F1D5D91DD00525870 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF6494831D5D91DD00525870 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF6494841D5D91DD00525870 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF64949D1D5D91DD00525870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EF64949E1D5D91DD00525870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF6494A01D5D91DD00525870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DocxTemplateEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF6494A11D5D91DD00525870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DocxTemplateEngine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF6494A31D5D91DD00525870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocxTemplateEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocxTemplateEngine.app/DocxTemplateEngine";
+			};
+			name = Debug;
+		};
+		EF6494A41D5D91DD00525870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DocxTemplateEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DocxTemplateEngine.app/DocxTemplateEngine";
+			};
+			name = Release;
+		};
+		EF6494A61D5D91DD00525870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DocxTemplateEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DocxTemplateEngine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EF6494A71D5D91DD00525870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DocxTemplateEngineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nfs.DocxTemplateEngineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DocxTemplateEngine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF64946D1D5D91DD00525870 /* Build configuration list for PBXProject "DocxTemplateEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF64949D1D5D91DD00525870 /* Debug */,
+				EF64949E1D5D91DD00525870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF64949F1D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6494A01D5D91DD00525870 /* Debug */,
+				EF6494A11D5D91DD00525870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6494A21D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6494A31D5D91DD00525870 /* Debug */,
+				EF6494A41D5D91DD00525870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF6494A51D5D91DD00525870 /* Build configuration list for PBXNativeTarget "DocxTemplateEngineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF6494A61D5D91DD00525870 /* Debug */,
+				EF6494A71D5D91DD00525870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF64946A1D5D91DD00525870 /* Project object */;
+}
