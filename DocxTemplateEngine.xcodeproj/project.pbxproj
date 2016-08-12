@@ -22,7 +22,6 @@
 		EF6494D11D5DA5B800525870 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494C91D5DA5B800525870 /* zip.c */; };
 		EF6494D21D5DA5B800525870 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6494CC1D5DA5B800525870 /* SSZipArchive.m */; };
 		EF6494D61D5DA78100525870 /* template1.docx in Resources */ = {isa = PBXBuildFile; fileRef = EF6494D41D5DA78100525870 /* template1.docx */; };
-		EF6494D71D5DA78100525870 /* template1.json in Resources */ = {isa = PBXBuildFile; fileRef = EF6494D51D5DA78100525870 /* template1.json */; };
 		EF6494EE1D5DA96700525870 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DB1D5DA96700525870 /* aescrypt.c */; };
 		EF6494EF1D5DA96700525870 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DC1D5DA96700525870 /* aeskey.c */; };
 		EF6494F01D5DA96700525870 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494DE1D5DA96700525870 /* aestab.c */; };
@@ -33,6 +32,13 @@
 		EF6494F51D5DA96700525870 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494EA1D5DA96700525870 /* pwd2key.c */; };
 		EF6494F61D5DA96700525870 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = EF6494EC1D5DA96700525870 /* sha1.c */; };
 		EF6494FA1D5DA9F400525870 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6494F91D5DA9F400525870 /* libz.tbd */; };
+		EF6495481D5DCB3300525870 /* ICUTemplateMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64953B1D5DCB3300525870 /* ICUTemplateMatcher.m */; };
+		EF6495491D5DCB3300525870 /* MGTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = EF64953D1D5DCB3300525870 /* MGTemplateEngine.m */; };
+		EF64954A1D5DCB3300525870 /* MGTemplateStandardFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6495411D5DCB3300525870 /* MGTemplateStandardFilters.m */; };
+		EF64954B1D5DCB3300525870 /* MGTemplateStandardMarkers.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6495431D5DCB3300525870 /* MGTemplateStandardMarkers.m */; };
+		EF64954C1D5DCB3300525870 /* NSArray_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6495451D5DCB3300525870 /* NSArray_DeepMutableCopy.m */; };
+		EF64954D1D5DCB3300525870 /* NSDictionary_DeepMutableCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6495471D5DCB3300525870 /* NSDictionary_DeepMutableCopy.m */; };
+		EF64954F1D5DCDB100525870 /* template2.docx in Resources */ = {isa = PBXBuildFile; fileRef = EF64954E1D5DCDB100525870 /* template2.docx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +90,6 @@
 		EF6494CC1D5DA5B800525870 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		EF6494CD1D5DA5B800525870 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
 		EF6494D41D5DA78100525870 /* template1.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = template1.docx; sourceTree = "<group>"; };
-		EF6494D51D5DA78100525870 /* template1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = template1.json; sourceTree = "<group>"; };
 		EF6494D91D5DA96700525870 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
 		EF6494DA1D5DA96700525870 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
 		EF6494DB1D5DA96700525870 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
@@ -107,6 +112,22 @@
 		EF6494EC1D5DA96700525870 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
 		EF6494ED1D5DA96700525870 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
 		EF6494F91D5DA9F400525870 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EF6495391D5DCB3300525870 /* DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepMutableCopy.h; sourceTree = "<group>"; };
+		EF64953A1D5DCB3300525870 /* ICUTemplateMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICUTemplateMatcher.h; sourceTree = "<group>"; };
+		EF64953B1D5DCB3300525870 /* ICUTemplateMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICUTemplateMatcher.m; sourceTree = "<group>"; };
+		EF64953C1D5DCB3300525870 /* MGTemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateEngine.h; sourceTree = "<group>"; };
+		EF64953D1D5DCB3300525870 /* MGTemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateEngine.m; sourceTree = "<group>"; };
+		EF64953E1D5DCB3300525870 /* MGTemplateFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateFilter.h; sourceTree = "<group>"; };
+		EF64953F1D5DCB3300525870 /* MGTemplateMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateMarker.h; sourceTree = "<group>"; };
+		EF6495401D5DCB3300525870 /* MGTemplateStandardFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardFilters.h; sourceTree = "<group>"; };
+		EF6495411D5DCB3300525870 /* MGTemplateStandardFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardFilters.m; sourceTree = "<group>"; };
+		EF6495421D5DCB3300525870 /* MGTemplateStandardMarkers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTemplateStandardMarkers.h; sourceTree = "<group>"; };
+		EF6495431D5DCB3300525870 /* MGTemplateStandardMarkers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTemplateStandardMarkers.m; sourceTree = "<group>"; };
+		EF6495441D5DCB3300525870 /* NSArray_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArray_DeepMutableCopy.h; sourceTree = "<group>"; };
+		EF6495451D5DCB3300525870 /* NSArray_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArray_DeepMutableCopy.m; sourceTree = "<group>"; };
+		EF6495461D5DCB3300525870 /* NSDictionary_DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_DeepMutableCopy.h; sourceTree = "<group>"; };
+		EF6495471D5DCB3300525870 /* NSDictionary_DeepMutableCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_DeepMutableCopy.m; sourceTree = "<group>"; };
+		EF64954E1D5DCDB100525870 /* template2.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = template2.docx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +224,7 @@
 		EF6494A81D5D920300525870 /* DocxTemplateEngine */ = {
 			isa = PBXGroup;
 			children = (
+				EF6495381D5DCB3300525870 /* MGTemplateEngine */,
 				EF6494C01D5DA5B800525870 /* SSZipArchive */,
 				EF6494A91D5D921B00525870 /* DocxTemplateEngine.h */,
 				EF6494AA1D5D921B00525870 /* DocxTemplateEngine.m */,
@@ -242,7 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				EF6494D41D5DA78100525870 /* template1.docx */,
-				EF6494D51D5DA78100525870 /* template1.json */,
+				EF64954E1D5DCDB100525870 /* template2.docx */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -273,6 +295,28 @@
 				EF6494ED1D5DA96700525870 /* sha1.h */,
 			);
 			path = aes;
+			sourceTree = "<group>";
+		};
+		EF6495381D5DCB3300525870 /* MGTemplateEngine */ = {
+			isa = PBXGroup;
+			children = (
+				EF6495391D5DCB3300525870 /* DeepMutableCopy.h */,
+				EF64953A1D5DCB3300525870 /* ICUTemplateMatcher.h */,
+				EF64953B1D5DCB3300525870 /* ICUTemplateMatcher.m */,
+				EF64953C1D5DCB3300525870 /* MGTemplateEngine.h */,
+				EF64953D1D5DCB3300525870 /* MGTemplateEngine.m */,
+				EF64953E1D5DCB3300525870 /* MGTemplateFilter.h */,
+				EF64953F1D5DCB3300525870 /* MGTemplateMarker.h */,
+				EF6495401D5DCB3300525870 /* MGTemplateStandardFilters.h */,
+				EF6495411D5DCB3300525870 /* MGTemplateStandardFilters.m */,
+				EF6495421D5DCB3300525870 /* MGTemplateStandardMarkers.h */,
+				EF6495431D5DCB3300525870 /* MGTemplateStandardMarkers.m */,
+				EF6495441D5DCB3300525870 /* NSArray_DeepMutableCopy.h */,
+				EF6495451D5DCB3300525870 /* NSArray_DeepMutableCopy.m */,
+				EF6495461D5DCB3300525870 /* NSDictionary_DeepMutableCopy.h */,
+				EF6495471D5DCB3300525870 /* NSDictionary_DeepMutableCopy.m */,
+			);
+			path = MGTemplateEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6494D71D5DA78100525870 /* template1.json in Resources */,
+				EF64954F1D5DCDB100525870 /* template2.docx in Resources */,
 				EF6494851D5D91DD00525870 /* LaunchScreen.storyboard in Resources */,
 				EF6494821D5D91DD00525870 /* Assets.xcassets in Resources */,
 				EF6494801D5D91DD00525870 /* Main.storyboard in Resources */,
@@ -410,18 +454,24 @@
 				EF6494F31D5DA96700525870 /* hmac.c in Sources */,
 				EF64947D1D5D91DD00525870 /* ViewController.m in Sources */,
 				EF6494F01D5DA96700525870 /* aestab.c in Sources */,
+				EF6495491D5DCB3300525870 /* MGTemplateEngine.m in Sources */,
 				EF6494F51D5DA96700525870 /* pwd2key.c in Sources */,
 				EF6494D11D5DA5B800525870 /* zip.c in Sources */,
 				EF6494EF1D5DA96700525870 /* aeskey.c in Sources */,
 				EF6494D21D5DA5B800525870 /* SSZipArchive.m in Sources */,
+				EF64954B1D5DCB3300525870 /* MGTemplateStandardMarkers.m in Sources */,
 				EF6494F11D5DA96700525870 /* entropy.c in Sources */,
 				EF6494D01D5DA5B800525870 /* unzip.c in Sources */,
 				EF64947A1D5D91DD00525870 /* AppDelegate.m in Sources */,
 				EF6494CF1D5DA5B800525870 /* mztools.c in Sources */,
+				EF6495481D5DCB3300525870 /* ICUTemplateMatcher.m in Sources */,
 				EF6494771D5D91DD00525870 /* main.m in Sources */,
 				EF6494F61D5DA96700525870 /* sha1.c in Sources */,
 				EF6494AB1D5D921B00525870 /* DocxTemplateEngine.m in Sources */,
 				EF6494EE1D5DA96700525870 /* aescrypt.c in Sources */,
+				EF64954D1D5DCB3300525870 /* NSDictionary_DeepMutableCopy.m in Sources */,
+				EF64954C1D5DCB3300525870 /* NSArray_DeepMutableCopy.m in Sources */,
+				EF64954A1D5DCB3300525870 /* MGTemplateStandardFilters.m in Sources */,
 				EF6494F21D5DA96700525870 /* fileenc.c in Sources */,
 				EF6494F41D5DA96700525870 /* prng.c in Sources */,
 				EF6494CE1D5DA5B800525870 /* ioapi.c in Sources */,

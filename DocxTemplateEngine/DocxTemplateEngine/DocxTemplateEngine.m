@@ -8,9 +8,12 @@
 
 #import "DocxTemplateEngine.h"
 #import "SSZipArchive.h"
+#import "MGTemplateEngine.h"
+#import "ICUTemplateMatcher.h"
 
-@interface DocxTemplateEngine ()
+@interface DocxTemplateEngine () <MGTemplateEngineDelegate>
 
+@property (nonatomic, strong) MGTemplateEngine *templateEngine;
 @property (nonatomic, strong) NSString *workspaceDirectoryPath;
 - (void)createWorkspaceIfNeeded;
 
@@ -33,11 +36,18 @@
     if (self = [super init]) {
         self.workspaceDirectory = NSDocumentDirectory;
         self.workspaceName = @"DocxWorkspace";
-        self.placeholderFormat = @"{{%@}}";
         
         [self createWorkspaceIfNeeded];
+        [self createTemplateEngine];
     }
     return self;
+}
+
+- (void)createTemplateEngine
+{
+    self.templateEngine = [[MGTemplateEngine alloc] init];
+    self.templateEngine.matcher = [ICUTemplateMatcher matcherWithTemplateEngine:self.templateEngine];
+    self.templateEngine.delegate = self;
 }
 
 - (void)createWorkspaceIfNeeded
@@ -58,26 +68,6 @@
                             data:(NSDictionary *)data
                    usingTemplate:(NSString *)tplname
 {
-    return [self createDocxWithName:name
-                               data:data
-                      usingTemplate:tplname
-                  andTemplateConfig:tplname];
-}
-
-+ (NSString *)createDocxWithName:(NSString *)name
-                            data:(NSDictionary *)data
-                   usingTemplate:(NSString *)tplname
-{
-    return [[DocxTemplateEngine sharedEngine] createDocxWithName:name
-                                                            data:data
-                                                   usingTemplate:tplname];
-}
-
-- (NSString *)createDocxWithName:(NSString *)name
-                            data:(NSDictionary *)data
-                   usingTemplate:(NSString *)tplname
-               andTemplateConfig:(NSString *)confname
-{
     NSString *tplBundlePath = [[NSBundle mainBundle] pathForResource:tplname ofType:@"docx"];
     NSString *tplWorkspacePath = [self.workspaceDirectoryPath stringByAppendingFormat:@"/%@.docx", tplname];
     if ([[NSFileManager defaultManager] fileExistsAtPath:tplWorkspacePath]) {
@@ -93,7 +83,7 @@
                               withIntermediateDirectories:YES
                                                attributes:nil
                                                     error:nil];
-
+    // unzip
     BOOL docxRet = [SSZipArchive unzipFileAtPath:tplWorkspacePath toDestination:tmpDirectoryPath];
     if (!docxRet) { // cleanup
         [[NSFileManager defaultManager] removeItemAtPath:tplWorkspacePath error:nil];
@@ -101,35 +91,14 @@
         return nil;
     }
     
+    // template replacing
     docxRet = NO;
     // word/document.xml
     NSString *contentPath = [tmpDirectoryPath stringByAppendingPathComponent:@"word/document.xml"];
-    NSMutableString *content = [[NSMutableString alloc] initWithContentsOfFile:contentPath encoding:NSUTF8StringEncoding error:nil];
-    // Replace placeholders
-    NSString *confPath = [[NSBundle mainBundle] pathForResource:confname ofType:@"json"];
-    if (content.length > 0 && [[NSFileManager defaultManager] fileExistsAtPath:confPath]) {
-        BOOL contentChanged = NO;
-        
-        NSData *jsonData = [[NSData alloc] initWithContentsOfFile:confPath];
-        NSArray *placeholders = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
-        
-        for (NSString *key in placeholders) {
-            NSString *value = data[key];
-            if (value) {
-                contentChanged = YES;
-                NSString *placeholder = [[NSString alloc] initWithFormat:self.placeholderFormat, key];
-                [content replaceOccurrencesOfString:placeholder
-                                         withString:value
-                                            options:0
-                                              range:NSMakeRange(0, content.length)];
-            }
-        }
-        
-        if (contentChanged) {
-            docxRet = [content writeToFile:contentPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
-        }
+    NSString *content = [self.templateEngine processTemplateInFileAtPath:contentPath withVariables:data];
+    if (content.length > 0) {
+        docxRet = [content writeToFile:contentPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
     }
-    
     if (!docxRet) { // cleanup
         [[NSFileManager defaultManager] removeItemAtPath:tplWorkspacePath error:nil];
         [[NSFileManager defaultManager] removeItemAtPath:tmpDirectoryPath error:nil];
@@ -162,12 +131,17 @@
 + (NSString *)createDocxWithName:(NSString *)name
                             data:(NSDictionary *)data
                    usingTemplate:(NSString *)tplname
-               andTemplateConfig:(NSString *)confname
 {
     return [[DocxTemplateEngine sharedEngine] createDocxWithName:name
                                                             data:data
-                                                   usingTemplate:tplname
-                                               andTemplateConfig:confname];
+                                                   usingTemplate:tplname];
+}
+
+#pragma mark - 
+
+- (void)templateEngine:(MGTemplateEngine *)engine encounteredError:(NSError *)error isContinuing:(BOOL)continuing
+{
+    NSLog(@"%@", error);
 }
 
 @end
